@@ -9,3 +9,7 @@ yarn install
 
 yarn start
 ```
+
+## How to emulate
+
+> https://docs.expo.dev/workflow/android-studio-emulator/
