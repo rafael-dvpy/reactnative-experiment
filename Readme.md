@@ -15,6 +15,8 @@ MESSAGINGSENDERID=string
 APPID=string
 ```
 
+Then with a terminal window open on the folder, run the following commands
+
 ```bash
 yarn install
 
