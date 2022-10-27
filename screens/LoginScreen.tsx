@@ -23,7 +23,7 @@ const LoginScreen = () => {
   useEffect(() => {
     const unsubscribe = onAuthStateChanged(auth, (user) => {
       if (user) {
-        navigation.reset({ index: 0, routes: [{ name: "Home" }] });
+        navigation.reset({ index: 0, routes: [{ name: "HomePage" }] });
       }
     });
     return unsubscribe;
