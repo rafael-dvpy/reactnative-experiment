@@ -13,5 +13,6 @@ declare module "@env" {
     STORAGEBUCKET,
     MESSAGINGSENDERID,
     APPID,
+    DATABASEURL,
   };
 }

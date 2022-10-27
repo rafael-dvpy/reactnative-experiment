@@ -2,12 +2,14 @@ import {
   APIKEY,
   APPID,
   AUTHDOMAIN,
+  DATABASEURL,
   MESSAGINGSENDERID,
   PROJECTID,
   STORAGEBUCKET,
 } from "@env";
 import { initializeApp } from "firebase/app";
 import { getAuth } from "firebase/auth";
+import { getDatabase } from "firebase/database";
 
 export const firebaseConfig = {
   apiKey: APIKEY,
@@ -16,8 +18,10 @@ export const firebaseConfig = {
   storageBucket: STORAGEBUCKET,
   messagingSenderId: MESSAGINGSENDERID,
   appId: APPID,
+  databaseURL: DATABASEURL,
 };
 const app = initializeApp(firebaseConfig);
 const auth = getAuth(app);
+const database = getDatabase(app);
 
-export { auth };
+export { database, auth };
